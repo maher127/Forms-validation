@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <section class="forms my-4  py-5">
+      <div class="container">
+        <div class="col-4 mx-auto my-5">
+          <form action="post" name="contactForm" id="myForm">
+            <div class="form-group text-white">
+              <label for="exampleInputEmail1 my-4 ">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="name"
+              />
+            </div>
+            <div class="form-group text-white">
+              <label for="exampleInputEmail1 my-4 ">Adress:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="adress"
+              />
+            </div>
+            <div class="form-group text-white">
+              <label for="exampleInputEmail1 my-4 ">E-mail Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="email"
+              />
+            </div>
+            <div class="form-group text-white">
+              <label for="exampleInputEmail1 my-4 ">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="password"
+              />
+            </div>
+            <div class="form-group text-white my-4">
+              <label for="exampleFormControlTextarea1">Comments:</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                name="comments"
+              ></textarea>
+            </div>
+            <div class="button text-center ">
+              <button
+                type="submit"
+                class="btn btn-lg btn-block butt text-white"
+                id="send"
+              >
+                Send
+              </button>
+              <button
+                type="submit"
+                class="btn btn-lg btn-block butt text-white"
+                id="reset"
+                onclick="resetForm()"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
